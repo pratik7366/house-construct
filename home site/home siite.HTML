@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Building Platform</title>
+    <link rel="stylesheet" href="C:\Users\prati\OneDrive\Desktop\home site\homesite.CSS">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Login Section -->
+           
+            <div id="login-container">
+                <button id="login-btn" aria-label="Login">
+                    <img src="C:\Users\prati\OneDrive\Desktop\home site\login.png" alt="User Login" class="user-icon">
+                </button>
+            </div>
+            <div id="login-modal" class="modal">
+                <div class="modal-content">
+                    <button class="close-button" aria-label="Close">&times;</button>
+                    <h2>User Login</h2>
+                    <form id="login-form">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" placeholder="Enter username" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="Enter password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+            <h1>Home Building Platform</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home-design">Home Design</a></li>
+                    <li><a href="#contractors">Contractors</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home-design" class="content-section">
+            <h2>Design Your Dream Home</h2>
+            <p>Provide your land details to receive a custom design for your home.</p>
+            <form id="design-form">
+                <textarea id="land-details" rows="4" placeholder="Enter your land details in sq.feet"></textarea>
+                <button type="submit">Get Design</button>
+            </form>
+        </section>
+        <section id="contractors" class="content-section">
+            <h2>Find Reliable Contractors</h2>
+            <input type="text" id="search-contractor" placeholder="Search contractors..." />
+            <div class="card-container" id="contractor-list">
+                <!-- Contractor cards dynamically populated -->
+            </div>
+        </section>
+        <section id="services" class="content-section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Interior Designing</li>
+                <li>Electrical Work</li>
+                <li>Custom Building Plans</li>
+                <li>3D Virtual Tours</li>
+            </ul>
+        </section>
+        <section id="testimonials" class="content-section">
+            <h2>What Our Clients Say</h2>
+            <div id="testimonial-carousel">
+                <!-- Testimonials dynamically populated -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Home Building Platform. All Rights Reserved.</p>
+    </footer>
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>User Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="C:\Users\prati\OneDrive\Desktop\home site\HOMESITE.JS"></script>
+</body>
+</html>

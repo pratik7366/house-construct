@@ -1,0 +1,179 @@
+/* styles.css */
+#login-container {
+    display: flex;
+    align-items: center;
+}
+
+#login-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    z-index: 999; /* Ensure it appears above all other content */
+    justify-content: center;
+    align-items: center; /* Center the modal */
+}
+
+/* Modal Content */
+.modal-content {
+    background: #8dd32b;
+    padding: 2em;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-button:hover {
+    color: #007BFF;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to right, #007BFF, #00c6ff);
+    color: white;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #0056b3;
+}
+
+/* Section Styles */
+.content-section {
+    padding: 3em 2em;
+    margin: 1em auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#home-design {
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+}
+
+#contractors {
+    background: linear-gradient(to bottom, #a18cd1, #fbc2eb);
+}
+
+#services {
+    background: linear-gradient(to bottom, #43e97b, #38f9d7);
+}
+
+#testimonials {
+    background: linear-gradient(to bottom, #fa709a, #fee140);
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 1em;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 20px);
+    background: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: #007BFF;
+}
